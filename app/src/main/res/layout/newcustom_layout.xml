@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_220sdp"
+    android:layout_height="@dimen/_240sdp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/delete_dialouge"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_195sdp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:scaleType="fitCenter"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/_68sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@drawable/delete_no_btn"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_okay"
+            android:layout_width="@dimen/_68sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@drawable/delete_yes_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

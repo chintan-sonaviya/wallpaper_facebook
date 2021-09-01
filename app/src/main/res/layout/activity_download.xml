@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DownloadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:background="#FD3C31"
+        >
+        <ImageView
+            android:id="@+id/backact"
+            android:padding="7dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:textStyle="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Downloaded Wallpaper"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvError"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Wallpaper Found!!!"
+        android:gravity="center"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/_20sdp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/layqw"
+        android:id="@+id/admobBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:padding="@dimen/_2sdp"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+</LinearLayout>

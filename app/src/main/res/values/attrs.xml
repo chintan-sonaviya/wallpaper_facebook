@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RB">
+        <!--star width-->
+        <attr name="starWidth" format="dimension"/>
+        <!--star height-->
+        <attr name="starHeight" format="dimension"/>
+        <!--star number-->
+        <attr name="maxStar" format="integer"/>
+        <!--min selected star-->
+        <attr name="minStar" format="float"/>
+        <!--current star count -->
+        <attr name="currentStar" format="float"/>
+        <!--star padding-->
+        <attr name="padding" format="dimension"/>
+        <!--empty star src-->
+        <attr name="emptyStar" format="reference"/>
+        <!--full star src-->
+        <attr name="fullStar" format="reference"/>
+        <!--half star src-->
+        <attr name="halfStar" format="reference"/>
+        <!--is can be change-->
+        <attr name="canChange" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:src="@drawable/header"
+            android:scaleType="fitStart"
+            />
+        <ImageView
+            android:id="@+id/setting"
+            android:background="@color/white"
+            android:layout_gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ico_setting"
+            android:padding="8dp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scaleType="fitEnd"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:src="@drawable/small_banner"/>
+
+            <com.facebook.ads.NativeAdLayout
+                android:id="@+id/admobnative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <ImageView
+                android:id="@+id/wallpaperlist"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="120dp"
+                android:src="@drawable/start"
+                />
+            <ImageView
+                android:id="@+id/downloaded"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="120dp"
+                android:src="@drawable/all_download"
+                />
+            <ImageView
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/rate"
+                android:layout_weight="1"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="120dp"
+                android:src="@drawable/rate"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tredingapps"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_app"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/layqw"
+        android:id="@+id/admobBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_2sdp"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+</LinearLayout>

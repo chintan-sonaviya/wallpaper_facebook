@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wallpaper App</string>
+
+    <string name="Fb_banner">YOUR_PLACEMENT_ID</string>
+    <string name="Fb_int">YOUR_PLACEMENT_ID</string>
+    <string name="Fb_native">YOUR_PLACEMENT_ID</string>
+
+</resources>

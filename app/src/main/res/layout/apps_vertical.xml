@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/app1"
+            android:id="@+id/icon"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/title"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whatsapp Messenger"
+            android:textSize="16dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:fadeScrollbars="false"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
